@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { ChildNode, ChildNodeShape } from "./types";
+	import type { ChildNode, ChildNodeShape } from "$lib/types";
+	import blockComponents from "$lib/_defaultBlocks";
 
-	import blockComponents from "./defaultBlocks";
 	export let childNodes: ChildNode[] = [];
 	export const assignProps = (childNode: ChildNodeShape) =>
 		childNode.props && !!childNode.component ? childNode.props : {};

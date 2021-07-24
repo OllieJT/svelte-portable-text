@@ -1,10 +1,9 @@
 <script lang="ts">
 	import type { SvelteComponent } from "svelte/internal";
-	import type { ChildNode } from "./types";
+	import type { ChildNode, DefaultBlockTag } from "$lib/types";
+	import ChildNodes from "$lib/_components/ChildNodes.svelte";
+	import blockComponents from "$lib/_defaultBlocks";
 
-	import ChildNodes from "./ChildNodes.svelte";
-	import blockComponents from "./defaultBlocks";
-	import type { DefaultBlockTag } from "./types";
 	export let childNodes: ChildNode[] = [];
 	export let tag: DefaultBlockTag;
 	export let component: SvelteComponent;

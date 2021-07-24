@@ -1,11 +1,14 @@
 {
-	"name": "~TODO~",
-	"version": "0.0.1",
+	"name": "@inqling/svelte-portable-text",
+	"version": "0.0.2",
+	"author": "OllieJT",
+	"license": "ISC",
+	"keywords": [
+		"svelte"
+	],
 	"scripts": {
 		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
-		"package": "svelte-kit package",
-		"preview": "svelte-kit preview",
+		"build": "svelte-kit package",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
@@ -28,5 +31,13 @@
 		"tslib": "^2.0.0",
 		"typescript": "^4.0.0"
 	},
-	"type": "module"
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/OllieJT/svelte-portable-text.git"
+	},
+	"bugs": {
+		"url": "https://github.com/OllieJT/svelte-portable-text/issues"
+	},
+	"homepage": "https://github.com/OllieJT/svelte-portable-text#readme"
 }

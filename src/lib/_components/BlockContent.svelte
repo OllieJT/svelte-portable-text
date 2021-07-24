@@ -1,7 +1,7 @@
 <script lang="ts">
-	import blockContentToNodes from "./blockContentToNodes";
-	import ChildNode from "./ChildNode.svelte";
-	import ChildNodes from "./ChildNodes.svelte";
+	import blockContentToNodes from "$lib/_util/blockContentToNodes";
+	import ChildNode from "$lib/_components/ChildNode.svelte";
+	import ChildNodes from "$lib/_components/ChildNodes.svelte";
 
 	type Block = {
 		_key: string;

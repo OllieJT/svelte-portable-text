@@ -1,8 +1,8 @@
-import internals from "@sanity/block-content-to-hyperscript/internals.js";
+const internals = require("@sanity/block-content-to-hyperscript/internals");
 
 const { getImageUrl, blocksToNodes, getSerializers } = internals;
 
-const renderNode = (serializer, properties, children) => {
+const renderNode = (serializer: any, properties: any, children: any) => {
 	const props = properties || {};
 	if (typeof serializer === "function") {
 		return serializer(Object.assign({}, props, { children }));
@@ -15,7 +15,7 @@ const renderNode = (serializer, properties, children) => {
 
 const { defaultSerializers, serializeSpan } = getSerializers(renderNode, { useDashedStyles: true });
 
-const blockContentToNodes = (options) => {
+const blockContentToNodes = (options: any) => {
 	return blocksToNodes(renderNode, options, defaultSerializers, serializeSpan);
 };
 

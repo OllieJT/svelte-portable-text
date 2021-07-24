@@ -9,6 +9,15 @@ const config = {
 	kit: {
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: "#svelte",
+		/* package: {
+			exports: {
+				include: [
+					"./src/lib/index",
+					"./src/lib/types",
+					"./src/lib/BlockContent.svelte",
+				],
+			},
+		}, */
 	},
 	//vite: {optimizeDeps: { include: ['@sanity/block-content-to-hyperscript/internals.js'] }}
 };
