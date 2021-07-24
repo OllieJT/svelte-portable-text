@@ -1,0 +1,13 @@
+# System Only
+node_modules/**
+.DS_Store
+
+# Output Directories
+.svelte-kit/**
+build/**
+dist/**
+/package
+
+.env*
+
+*.log
